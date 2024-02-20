@@ -1,12 +1,11 @@
 local M = {
   "nvim-telescope/telescope.nvim",
-  commit = "203bf5609137600d73e8ed82703d6b0e320a5f36",
   event = "Bufenter",
   cmd = { "Telescope" },
   dependencies = {
     {
       "ahmedkhalf/project.nvim",
-      commit = "685bc8e3890d2feb07ccf919522c97f7d33b94e4",
+      -- "nvim-telescope/telescope-media-files.nvim",
     },
   },
 }
@@ -29,5 +28,12 @@ M.opts = {
     },
   },
 }
+
+-- function M.config()
+--   local telescope = require "telescope"
+--   telescope.setup {
+--     extensions = { "media_files" },
+--   }
+-- end
 
 return M

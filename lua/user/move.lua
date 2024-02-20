@@ -1,10 +1,10 @@
 local M = {
-  "folke/which-key.nvim",
+  "rvmelkonian/move.vim",
   event = "VeryLazy",
 }
 
 function M.config()
-  require("which-key").setup {}
+  -- require("move").setup {}
 end
 
 return M

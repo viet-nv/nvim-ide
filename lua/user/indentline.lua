@@ -1,11 +1,11 @@
 local M = {
   "lukas-reineke/indent-blankline.nvim",
-  commit = "8299fe7703dfff4b1752aeed271c3b95281a952d",
+  main = "ibl",
   event = "BufReadPre",
 }
 
 M.opts = {
-  char = "▏",
+  char = "┆",
   show_trailing_blankline_indent = false,
   show_first_indent_level = true,
   use_treesitter = true,
@@ -17,5 +17,9 @@ M.opts = {
     "NvimTree",
   },
 }
+
+function M.config()
+  require("ibl").setup()
+end
 
 return M

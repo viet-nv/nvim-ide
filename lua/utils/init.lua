@@ -5,10 +5,11 @@ M.servers = {
   "cssls",
   "html",
   "tsserver",
-  "pyright",
   "bashls",
   "jsonls",
   "yamlls",
+  "rust_analyzer",
+  "move_analyzer",
 }
 
 return M

@@ -1,6 +1,5 @@
 local M = {
   "nvim-lualine/lualine.nvim",
-  commit = "0050b308552e45f7128f399886c86afefc3eb988",
   event = { "VimEnter", "InsertEnter", "BufReadPre", "BufAdd", "BufNew", "BufReadPost" },
 }
 
@@ -32,7 +31,7 @@ function M.config()
 
   local filetype = {
     "filetype",
-    icons_enabled = false,
+    icons_enabled = true,
   }
 
   local location = {
@@ -57,6 +56,9 @@ function M.config()
       lualine_a = { "mode" },
       lualine_b = { "branch" },
       lualine_c = { diagnostics },
+      lualine_d = {
+        "filename",
+      },
       lualine_x = { diff, spaces, "encoding", filetype },
       lualine_y = { location },
       lualine_z = { "progress" },
